@@ -32,6 +32,11 @@ app.use("/detail/:id", (req, res) => {
   res.render("detail", { detailProduct });
 });
 
+app.use("/", (req, res, next) => {
+  console.log("bur bir middleware (ara yazılım/katman) dir");
+  next();
+});
+
 app.use("/", (req, res) => {
   //   res.send("burası express ile olusan anasayfa");
   //   res.json({ message: "anasayfa" });
