@@ -7,5 +7,10 @@
   </head>
   <body>
     <h1>Tüm Ürünler Sayfası</h1>
+    <div class="products">
+      <% products.forEach(product => { %>
+      <div><a href="/detail/<%= product.id %>"> <%= product.name %> </a></div>
+      <% }) %>
+    </div>
   </body>
 </html>
