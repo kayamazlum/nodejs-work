@@ -45,5 +45,5 @@ app.use("/", (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("server calistiii : 8000 portu");
+  console.log("server calistiii: 8000 portu");
 });
